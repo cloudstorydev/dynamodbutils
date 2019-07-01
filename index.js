@@ -90,14 +90,15 @@ importAll = function (dynamo) {
 
 
 //set what table to work on
-const tableName = 'northwind4';
+const tableName = 'northwind5';
 //create util instance, and set the config, table name, create new table (true/false)
 let dynamo = new DynamoUtils (awsConfig,tableName,false);
 
 //import all the csv, this only be done once
 //wait until table created before running this
-//  importAll(dynamo);
- 
+/*  
+importAll(dynamo);
+*/ 
 
 //following command below are queries to support your access pattern below
 //wait until import successful before running any queries
@@ -152,14 +153,14 @@ dynamo.getManyTo(from,to,(result)=>{
   
 //support more access pattern with query to data. It only support begins_with operator
 //get orders by customers + date
-dynamo.getByData('orders','customerID=WELLI,orderDate=1996-07-15',(result)=>{
+dynamo.getByData('orders','WELLI#1996-07-15',(result)=>{
   console.log (JSON.stringify(result));
   }
 );
  
 
 //get suppliers by country / city
-dynamo.getByData('suppliers','country=Japan,city=Tokyo',(result)=>{
+dynamo.getByData('suppliers','Japan#Tokyo',(result)=>{
   console.log (JSON.stringify(result));
   }
 );

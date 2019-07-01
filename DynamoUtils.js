@@ -45,9 +45,9 @@ const  put = function (params, callback) {
 const getDataField = function (row,dataKeys) {
   let dataArr = [];
   dataKeys.forEach(dataKey=>{
-    dataArr.push( `${dataKey}=${row[dataKey]}`); 
+    dataArr.push(row[dataKey]); 
   })
-  return  dataArr.toString() 
+  return  dataArr.toString().replace(/,/g, '#');
 }
 
 const createTable = function (name) {
