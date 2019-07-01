@@ -1,9 +1,10 @@
 # DynamoDbUtils
-A simple utility to import data to DynamoDB using 'Single Table' design principle, and then test your data with a few queries according to your access pattern
+A simple utility to model, import, query and test your data in your DynamoDB by adopting AWS DynamoDB Data Modelling Best practices (Single Table principle)  
+Easily run **Test-First Migration** approach for quick iteration to validate your model against your access pattern
 
 ## Prerequisite
   * NodeJS 
-  * Local DynamoDB https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html
+  * Run Local DynamoDB https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html
 
 ## How to use
   * Go over to index.js and understand the sample code there
