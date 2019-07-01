@@ -8,7 +8,7 @@ Easily run **Test-First Migration** approach for quick iteration to validate you
 
 ## How to use
   * Go over to index.js and understand the sample code there
-  * Update the configuration, and run the sample code 
+  * Update the configuration, and run the sample code (node index.js)
   * It will import the csv data in northwind folders
   * Run the queries in the sample code to test the import
   * Repeat as many as you like by simply changing table name or use your own data / csv file 
