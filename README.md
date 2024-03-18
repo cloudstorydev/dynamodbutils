@@ -1,3 +1,5 @@
+Blog post : https://medium.com/cloudstory/simplify-dynamodb-migration-with-test-first-data-migration-24e0bf58e9df
+
 # DynamoDbUtils
 A simple utility to model, import, query and test your data in your DynamoDB by adopting AWS DynamoDB Data Modelling Best practices (Single Table principle)  
 Easily run **Test-First Migration** approach for quick iteration to validate your model against your access pattern
